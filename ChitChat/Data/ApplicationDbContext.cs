@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using ChitChat.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace ChitChat.Data
 {
@@ -12,5 +14,8 @@ namespace ChitChat.Data
             : base(options)
         {
         }
+
+        public DbSet<Models.ChitChat> AspNetUsers { get; set; }
+
     }
 }

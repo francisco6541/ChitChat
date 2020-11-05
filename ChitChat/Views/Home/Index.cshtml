@@ -1,34 +1,98 @@
-﻿@model ChitChat
+﻿
+@model ViewModel
+@{ ViewData["Title"] = "Home Page";
+    var userName = User.Identity.Name; }
 
-@{
-    ViewData["Title"] = "Index";
+
+@**<div class="vertical-menu" style="float: right; margin-left: 8%; box-shadow: 1px 3px 5px 2px rgba(0,0,0,0.52); margin-right: 10%">*@
+    @*<h3 style="background-color: black; color: white">USERS IN CHAT</h3>*@
+
+    @*@foreach (var user in Model.User.OrderBy(m => m.UserName))
+    {
+        //Displays link for users. Does not initiate a one on one chat yet.
+<a asp-action="UserProfile" asp-controller="Profile"
+   asp-route-userid="@user.Id">@user.UserName</a>}
+</div>*@
+
+<div class="jumbotron bg-light" style="align-content:center;margin-top:1%">
+    <h2 class="text-center" style="color:rgb(0, 153, 255)">&nbsp; Chat Box
+    </h2>
+
+    <div class="row">
+
+        <div style="height:450px;width:700px;border:2px solid #ccc;overflow:auto;margin-bottom: 50px; display:flex; flex-direction:column-reverse">
+            <div class="col-md-12" id="chat">
+                @if (Model != null)
+                {
+    @foreach (var message in Model.Messages.OrderBy(m => m.When))
+    {
+        string containerClass, timePosition, textAlign, contcolor, offset, border;
+        if (userName == message.UserName)
+        {
+            containerClass = "container darker";
+
+            timePosition = "time-right text-light";
+            textAlign = "text-right text-white";
+            contcolor = "bg-primary";
+            offset = "col-md-6 offset-md-6";
+            border = "rounded border border-secondary";
+        }
+        else
+        {
+            containerClass = "container";
+            timePosition = "time-left text-black";
+            textAlign = "text-left text-black";
+            contcolor = "bg-white";
+            offset = "";
+            border = "rounded border border-secondary";
+        }
+
+<div class="row">
+    <div class="@offset">
+        <div class="@containerClass @contcolor @border" style="border-radius:20%; margin-top:2%">
+
+            <p class="sender @textAlign">@message.UserName</p>
+            <p class="@textAlign" style="margin-left:10%">@message.Text</p>
+            <span class="@timePosition">@message.When.ToString("M/dd/yyyy hh:MM tt")</span>
+        </div>
+    </div>
+</div>}}
+            </div>
+        </div>
+    </div>
+    <div>
+
+
+    </div>
+    <div class="col-md-12">
+        <form asp-action="Create"
+              data-ajax-begin="clearInputField" data-ajax-complete=""
+              data-ajax-failure="alert('Fail')" data-ajax-success="sendMessage"
+              data-ajax="true" data-ajax-method="POST">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <input name="Text" class="form-control" id="messageText" />
+            </div>
+            <div class="form-group">
+                <input style="background-color:rgb(0, 153, 255);color: white" type="submit" value="Send" id="submitButton" class="btn btn btn-block" />
+            </div>
+            <input type="hidden" value="@userName" name="username" />
+        </form>
+    </div>
+
+</div>
+
+@if (User.Identity.IsAuthenticated)
+{
+<script>
+        const userName = "@ViewBag.CurrentUserName";
+</script>
 }
 
-<h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => Model.Email)
-                </td>
-                @*<td>
-                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                </td>*@
-            </tr>
-    </tbody>
-</table>
+@section scripts {
+    <script src="~/signalr/signalr.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="~/js/chat.js"></script>
+    <script src="~/js/signalrReqHandler.js"></script>
+}

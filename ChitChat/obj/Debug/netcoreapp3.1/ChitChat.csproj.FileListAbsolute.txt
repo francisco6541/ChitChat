@@ -486,7 +486,6 @@ C:\Users\Francisco\desktop\chitchat\chitchat\bin\Debug\netcoreapp3.1\runtimes\wi
 C:\Users\Francisco\desktop\chitchat\chitchat\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Francisco\desktop\chitchat\chitchat\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Francisco\desktop\chitchat\chitchat\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Francisco\desktop\chitchat\chitchat\obj\Debug\netcoreapp3.1\ChitChat.csprojAssemblyReference.cache
 C:\Users\Francisco\desktop\chitchat\chitchat\obj\Debug\netcoreapp3.1\ChitChat.AssemblyInfoInputs.cache
 C:\Users\Francisco\desktop\chitchat\chitchat\obj\Debug\netcoreapp3.1\ChitChat.AssemblyInfo.cs
 C:\Users\Francisco\desktop\chitchat\chitchat\obj\Debug\netcoreapp3.1\ChitChat.RazorAssemblyInfo.cache
@@ -521,7 +520,6 @@ C:\Users\Francisco\desktop\chitchat\chitchat\obj\Debug\netcoreapp3.1\staticwebas
 C:\Users\Francisco\desktop\chitchat\chitchat\obj\Debug\netcoreapp3.1\ChitChat.dll
 C:\Users\Francisco\desktop\chitchat\chitchat\obj\Debug\netcoreapp3.1\ChitChat.pdb
 C:\Users\Francisco\desktop\chitchat\chitchat\obj\Debug\netcoreapp3.1\ChitChat.genruntimeconfig.cache
-C:\Users\Francisco\desktop\chitchat\chitchat\obj\Debug\netcoreapp3.1\Razor\Views\Home\ChatRoom.cshtml.g.cs
 C:\Users\Francisco\desktop\chitchat\chitchat\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\Index.cshtml.g.cs
 C:\Users\Francisco\desktop\chitchat\chitchat\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\PersonalData.cshtml.g.cs
 C:\Users\Francisco\desktop\chitchat\chitchat\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\_Layout.cshtml.g.cs
@@ -548,6 +546,17 @@ C:\Users\Francisco\Desktop\ChitChat\ChitChat\bin\Debug\netcoreapp3.1\runtimes\wi
 C:\Users\Francisco\Desktop\ChitChat\ChitChat\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\Francisco\Desktop\ChitChat\ChitChat\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\Francisco\Desktop\ChitChat\ChitChat\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Francisco\Desktop\ChitChat\ChitChat\obj\Debug\netcoreapp3.1\ChitChat.csprojAssemblyReference.cache
+C:\Users\Francisco\Desktop\ChitChat\ChitChat\bin\Debug\netcoreapp3.1\PagedList.dll
+C:\Users\Francisco\Desktop\ChitChat\ChitChat\bin\Debug\netcoreapp3.1\PagedList.Mvc.dll
+C:\Users\Francisco\Desktop\ChitChat\ChitChat\bin\Debug\netcoreapp3.1\System.Web.Mvc.dll
+C:\Users\Francisco\Desktop\ChitChat\ChitChat\bin\Debug\netcoreapp3.1\System.Web.Razor.dll
+C:\Users\Francisco\Desktop\ChitChat\ChitChat\bin\Debug\netcoreapp3.1\System.Web.Helpers.dll
+C:\Users\Francisco\Desktop\ChitChat\ChitChat\bin\Debug\netcoreapp3.1\System.Web.WebPages.Deployment.dll
+C:\Users\Francisco\Desktop\ChitChat\ChitChat\bin\Debug\netcoreapp3.1\System.Web.WebPages.Razor.dll
+C:\Users\Francisco\Desktop\ChitChat\ChitChat\bin\Debug\netcoreapp3.1\System.Web.WebPages.dll
+C:\Users\Francisco\Desktop\ChitChat\ChitChat\bin\Debug\netcoreapp3.1\Microsoft.Web.Infrastructure.dll
 C:\Users\Francisco\Desktop\ChitChat\ChitChat\obj\Debug\netcoreapp3.1\ChitChat.csproj.CoreCompileInputs.cache
 C:\Users\Francisco\Desktop\ChitChat\ChitChat\obj\Debug\netcoreapp3.1\ChitChat.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Francisco\Desktop\ChitChat\ChitChat\obj\Debug\netcoreapp3.1\ChitChat.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Francisco\Desktop\ChitChat\ChitChat\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\DirectMessage.cshtml.g.cs

@@ -1,0 +1,20 @@
+﻿@model IEnumerable<string>
+@*@using Microsoft.AspNetCore.Identity
+    @using ChitChat.Models
+    @inject SignInManager<ChatUser> SignInManager
+    @inject UserManager<ChatUser> UserManager*@
+
+<a class="btn btn-block btn-outline-secondary" asp-action="Index"
+   asp-controller="Home" asp-route-category="">
+    Home
+</a>
+@foreach (string UserName in Model)
+{
+<a class="btn btn-block
+        @(UserName == ViewBag.SelectedCategory
+        ? "btn-primary": "btn-outline-secondary")"
+   asp-action="Index" asp-controller="Home"
+   asp-route-category="@UserName"
+   asp-route-productPage="1">
+    @UserName
+</a>}

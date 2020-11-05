@@ -31,7 +31,7 @@ namespace ChitChat.Areas.Identity.Pages.Account
         {
             if (email == null)
             {
-                return RedirectToPage("/Index");
+                return RedirectToPage("/Login");
             }
 
             var user = await _userManager.FindByEmailAsync(email);
